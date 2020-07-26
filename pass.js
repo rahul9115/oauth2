@@ -36,5 +36,5 @@ const PORT = 5000 || process.env.PORT;
 const host = "0.0.0.0";
 
 app.listen(PORT, host, function () {
-    console.log("Server Started");
+    console.log("Server Started",PORT);
 });
