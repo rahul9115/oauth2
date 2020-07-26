@@ -1,0 +1,48 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "my app",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.15.0",
+    "body-parser": "^1.10.0",
+    "concurrently": "^3.2.0",
+    "cookie-session": "^1.4.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "fetch": "^1.1.0",
+    "http-proxy-middleware": "^1.0.4",
+    "mongodb": "^3.5.7",
+    "mongoose": "^5.9.12",
+    "nodemon": "^2.0.4",
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "^2.0.0",
+    "prettier": "^1.19.1",
+    "stripe": "^8.67.0"
+  },
+  "engines": {
+    "node": "12.16.0",
+    "npm": "6.13.4"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon pass.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build"
+  },
+  "devDependencies": {
+    "react-scripts": "^1.0.2"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahul9115/typeform.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rahul9115/typeform/issues"
+  },
+  "homepage": "https://github.com/rahul9115/typeform#readme"
+}
