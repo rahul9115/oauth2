@@ -30,9 +30,8 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session())
 authroutes(app);
-stripes(app);
 
-const PORT = "0.0.0.0";
+const PORT = process.env.PORT || 5000;
 const host = "0.0.0.0";
 
 app.listen(PORT, host, function () {
