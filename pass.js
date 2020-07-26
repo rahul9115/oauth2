@@ -32,7 +32,7 @@ app.use(passport.session())
 authroutes(app);
 stripes(app);
 
-const PORT = 5000;
+const PORT = 5000 || process.env.PORT;
 const host = "0.0.0.0";
 
 app.listen(PORT, host, function () {
