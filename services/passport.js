@@ -8,7 +8,7 @@ passport.use(new GoogleStrategy({
   clientID: key.clientID,
   clientSecret: key.clientSecret,
   callbackURL: "/auth/google/callback",
-  proxy:true
+  proxy: true
 }, (accessToken, refreshToken, profile, done) => {
   var myobj = { googleId: profile.id };
   MongoClient.connect(uri, (err, db) => {
