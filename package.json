@@ -4,7 +4,7 @@
   "description": "my app",
   "main": "index.js",
   "dependencies": {
-    "axios": "^0.15.0",
+    "axios": "^0.18.1",
     "body-parser": "^1.10.0",
     "concurrently": "^3.2.0",
     "cookie-session": "^1.4.0",
