@@ -6,12 +6,12 @@ module.exports = (app) => {
         scope: ['email', 'profile']
     }))
     app.get('/auth/google/callback', passport.authenticate('google'), (req, res) => {
-        res.redirect('/surveys');
+        res.redirect('https://intense-badlands-91337.herokuapp.com//surveys');
 
     });
     app.get("/api/logout", (req, res) => {
         req.logout();
-        res.redirect('/');
+        res.redirect('https://intense-badlands-91337.herokuapp.com/');
     });
     app.get('/api/output', (req, res) => {
         res.send(req.user);
