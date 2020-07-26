@@ -6,7 +6,7 @@ module.exports = (app) => {
         scope: ['email', 'profile']
     }))
     app.get('/auth/google/callback', passport.authenticate('google'), (req, res) => {
-        res.redirect('https://intense-badlands-91337.herokuapp.com//surveys');
+        res.redirect('https://intense-badlands-91337.herokuapp.com/surveys');
 
     });
     app.get("/api/logout", (req, res) => {
